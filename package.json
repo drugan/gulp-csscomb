@@ -1,14 +1,14 @@
 {
-  "name": "gulp-csscomb",
+  "name": "gulp-csscombx",
   "description": "CSScomb is a coding style formatter for CSS.",
-  "version": "3.0.8",
-  "homepage": "http://github.com/koistya/gulp-csscomb",
+  "version": "4.1.1",
+  "homepage": "https://github.com/drugan/gulp-csscombx",
   "repository": {
     "type": "git",
-    "url": "http://github.com/koistya/gulp-csscomb.git"
+    "url": "https://github.com/drugan/gulp-csscombx.git"
   },
   "bugs": {
-    "url": "https://github.com/koistya/gulp-csscomb/issues"
+    "url": "https://github.com/drugan/gulp-csscombx/issues"
   },
   "author": "Konstantin Tarkus (@koistya)",
   "licenses": {
@@ -18,7 +18,7 @@
   "keywords": [
     "gulpplugin",
     "css",
-    "csscomb",
+    "csscombx",
     "lint",
     "linter",
     "preprocessor"
@@ -28,11 +28,11 @@
     "index.js"
   ],
   "dependencies": {
-    "csscomb": "^3.1.7",
     "gulp-util": "^3.0.7",
     "through2": "^2.0.1"
   },
   "devDependencies": {
+    "csscombx": "^4.1.1",
     "jshint": "^2.9.3",
     "mocha": "^3.0.2"
   },

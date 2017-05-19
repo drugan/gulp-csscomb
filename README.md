@@ -1,11 +1,17 @@
-# [gulp](http://gulpjs.com)-csscomb &nbsp; [![Build Status](http://img.shields.io/travis/koistya/gulp-csscomb/master.svg?style=flat)](http://travis-ci.org/koistya/gulp-csscomb) [![Dependency Status](https://david-dm.org/koistya/gulp-csscomb.svg?style=flat)](https://david-dm.org/koistya/gulp-csscomb) [![Tips](http://img.shields.io/gratipay/koistya.svg?style=flat)](https://gratipay.com/koistya)
+## Notes
 
-[<img src="https://rawgit.com/koistya/gulp-csscomb/master/csscomb.jpg" width="80" height="80" align="right">](http://csscomb.com)
+This fork uses a [custom CSS formatter](https://github.com/drugan/csscombx),
+which in its turn is a fork of the latest version of [CSScomb](https://github.com/csscomb/csscomb.js).
+
+# [gulp](http://gulpjs.com)-csscomb &nbsp; [![Build Status](http://img.shields.io/travis/drugan/gulp-csscombx/master.svg?style=flat)](http://travis-ci.org/drugan/gulp-csscombx) [![Dependency Status](https://david-dm.org/drugan/gulp-csscombx.svg?style=flat)](https://david-dm.org/drugan/gulp-csscombx) [![Tips](http://img.shields.io/gratipay/koistya.svg?style=flat)](https://gratipay.com/koistya)
+
+[<img src="https://rawgit.com/drugan/gulp-csscombx/master/csscomb.jpg" width="80" height="80" align="right">](http://csscomb.com)
 
 > Format CSS coding style with [CSScomb](http://csscomb.com).
 
 *If you have any difficulties with the output of this plugin, please use the
-[CSScomb tracker](https://github.com/csscomb/csscomb.js/issues).*
+[CSScomb tracker](https://github.com/csscomb/csscomb.js/issues) or
+[custom CSS formatter tracker](https://github.com/drugan/csscombx/issues).*
 
 ---
 
@@ -17,18 +23,18 @@
 ## Installation
 
 ```sh
-npm install gulp-csscomb --save-dev
+npm install gulp-csscombx --save-dev
 ```
 
 ## Example 1
 
 ```js
 var gulp = require('gulp');
-var csscomb = require('gulp-csscomb');
+var csscombx = require('gulp-csscombx');
 
 gulp.task('styles', function() {
   return gulp.src('src/styles/main.css')
-    .pipe(csscomb())
+    .pipe(csscombx())
     .pipe(gulp.dest('./build/css'));
 });
 ```
@@ -51,16 +57,16 @@ gulp.task('styles', function() {
       'iOS >= 6',
       'Opera >= 12',
       'Safari >= 6']))
-    .pipe($.csscomb())
+    .pipe($.csscombx())
     .pipe(gulp.dest('./build/css'));
 });
 ```
 
 If there is `.csscomb.json` file present in the same folder as the source file(s),
-or in the project root folder, `gulp-csscomb` will read config settings from it
+or in the project root folder, `gulp-csscombx` will read config settings from it
 instead of default config.
 
-You can also specify a pre-defined configuration. Ex.: `csscomb('zen')`
+You can also specify a pre-defined configuration. Ex.: `csscombx('zen')`
 
 ## License
 
