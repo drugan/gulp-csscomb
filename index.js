@@ -5,7 +5,7 @@
 
 'use strict';
 
-var Comb = require('csscomb');
+var Comb = require('csscombx');
 var fs = require('fs');
 var gutil = require('gulp-util');
 var path = require('path');
@@ -13,7 +13,7 @@ var through = require('through2');
 var PluginError = gutil.PluginError;
 
 // Constants
-var PLUGIN_NAME = 'gulp-csscomb';
+var PLUGIN_NAME = 'gulp-csscombx';
 var SUPPORTED_EXTENSIONS = ['.css', '.sass', '.scss', '.less'];
 
 // Plugin level function (dealing with files)
