@@ -51,14 +51,14 @@ function Plugin(configPath, options) {
         return cb();
       }
 
-      configPath = Comb.getCustomConfigPath(configPath || path.join(path.dirname(file.path), '.csscomb.json'));
+      configPath = Comb.getCustomConfigPath(configPath || path.join(path.dirname(file.path), '.csscombx.json'));
       var config = Comb.getCustomConfig(configPath);
 
       if (verbose) {
         gutil.log(PLUGIN_NAME, 'Using configuration file ' + gutil.colors.magenta(configPath));
       }
 
-      var comb = new Comb(config || 'csscomb');
+      var comb = new Comb(config || 'drupal');
       var syntax = options.syntax || file.path.split('.').pop();
 
       try {
