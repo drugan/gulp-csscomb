@@ -1,7 +1,7 @@
 {
   "name": "gulp-csscombx",
   "description": "CSScomb is a coding style formatter for CSS.",
-  "version": "4.2.0",
+  "version": "4.2.1",
   "homepage": "https://github.com/drugan/gulp-csscombx",
   "repository": {
     "type": "git",
@@ -11,10 +11,7 @@
     "url": "https://github.com/drugan/gulp-csscombx/issues"
   },
   "author": "Konstantin Tarkus (@koistya)",
-  "licenses": {
-    "type": "MIT",
-    "url": "https://github.com/koistya/gulp-csscomb/raw/master/LICENSE.txt"
-  },
+  "license": "MIT",
   "keywords": [
     "gulpplugin",
     "css",

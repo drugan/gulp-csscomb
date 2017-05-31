@@ -67,7 +67,7 @@ function Plugin(configPath, options) {
             syntax: syntax,
             filename: file.path
           });
-          promisedOutput.then(processedString => {
+          promisedOutput.then(function (processedString) {
             file.contents = new Buffer(processedString);
           });
       } catch (err) {
